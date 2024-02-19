@@ -11,6 +11,14 @@
     <body>
         <div class="wrapper">
             <header class="header">
+                <div class="header__sale pc py-2.5 px-8">
+                    <div class="container">
+                        <p class="text-white flex items-center justify-center gap-2.5">
+                            <span>20%</span>
+                            Todays special Deal in your city
+                        </p>
+                    </div>
+                </div>
                 <div class="container">
                     <div class="header__row">
                         <div class="header__logo">
@@ -20,7 +28,6 @@
                         </div>
                         <a href="#" class="btn btn__mobile text-2xl flex items-center justify-center gap-4 flex-auto">
                             Book online now
-                            <img src="./img/svgicons/24.svg" alt="24">
                         </a>
                         <div class="header__burger">
                             <span></span>
@@ -38,7 +45,7 @@
                                         your address.
                                     </div>
                                 </button>
-                                <div class="header__sale py-2.5 px-8 rounded-lg">
+                                <div class="header__sale mobile py-2.5 px-8 rounded-lg">
                                     <p class="text-gradient flex items-center justify-center gap-2.5">
                                         <span>20%</span>
                                         Todays special Deal in your city
@@ -80,7 +87,6 @@
                                 </nav>
                                 <a href="#" class="btn text-2xl flex items-center justify-center gap-4 flex-auto">
                                     Book online now
-                                    <img src="./img/svgicons/24.svg" alt="24">
                                 </a>
                             </div>
                         </div>
@@ -98,7 +104,12 @@
                                 </header>
                             </div>
                             <div class="intro__img overflow-hidden rounded-xl">
-                                <img src="./img/index/intro.png" alt="intro">
+                                <video
+                                    controls
+                                    autoplay
+                                    loop
+                                    src="./img/1.mp4"
+                                ></video>
                             </div>
                         </div>
                     </div>
@@ -107,14 +118,6 @@
                     <div class="container">
                         <form action="#" class="book__inputs">
                             <h3 class="text-4xl font-medium mb-12 text-center">Fill out the form and we will come as soon as possible.</h3>
-                            <label class="checkbox flex gap-12 mb-16 items-center">
-                                <input type="radio" class="custom-checkbox" name="name">
-                                <p>Name</p>
-                            </label>
-                            <label class="checkbox flex gap-12 mb-16 items-center">
-                                <input type="radio" class="custom-checkbox" name="name">
-                                <p>Name</p>
-                            </label>
                             <label class="flex gap-12 mb-16">
                                 <p class="text-3xl font-bold">
                                     Name
@@ -282,77 +285,76 @@
                             <button class="btn text-3xl m-0 m-auto">Submit</button>
                         </div>
                     </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__row">
+                        <div class="footer__item">
+                            <h3 class="footer__title">
+                                About
+                            </h3>
+                            <p class="text-base leading-10 mb-16">
+                                We are an award winning HVAC company with over 10+ years experience in the business. We provide a wide range of services for both residential and commercial clients.
+                            </p>
+                            <div class="footer__social flex gap-6">
+                                <a href="#" class="footer__link">
+                                    <img src="./img/svgicons/faccebook-small.svg" alt="faccebook">
+                                </a>
+                                <a href="#" class="footer__link">
+                                    <img src="./img/svgicons/gmail.svg" alt="gmail">
+                                </a>
+                                <a href="#" class="footer__link">
+                                    <img src="./img/svgicons/yelp-small.svg" alt="yelp">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer__item">
+                            <div class="footer__title">
+                                Contacts
+                            </div>
+                            <nav class="footer__nav">
+                                <a href="#">
+                                    <img src="./img/svgicons/address.svg" alt="address">
+                                    <div>
+                                        <p>Address</p>
+                                        <b>73 Canal Street, New York, Los</b>
+                                    </div>
+                                </a>
+                                <a href="tel:+1 555 23 12">
+                                    <img src="./img/svgicons/phone.svg" alt="phone">
+                                    <div>
+                                        <p>Phone number</p>
+                                        <b>+1 555 23 12</b>
+                                    </div>
+                                </a>
+                                <a href="mailto:example@example.com">
+                                    <img src="./img/svgicons/mail.svg" alt="mail">
+                                    <div>
+                                        <p>E-mail</p>
+                                        <b>example@example.com</b>
+                                    </div>
+                                </a>
+                            </nav>
+                        </div>
+                        <div class="footer__item">
+                            <div class="footer__title">
+                                Quic links
+                            </div>
+                            <nav class="footer__nav">
+                                <a href="#" class="font-bold">About us</a>
+                                <a href="#" class="font-bold">Services</a>
+                                <a href="#" class="font-bold">News</a>
+                                <a href="#" class="font-bold">Location</a>
+                                <a href="#" class="font-bold">Contacts</a>
+                            </nav>
+                        </div>
+                        <div class="footer__logo">
+                            <img src="./img/svgicons/logo-footer.svg" alt="logo">
+                        </div>
+                    </div>
                 </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <div class="container">
-                <div class="footer__row">
-                    <div class="footer__item">
-                        <h3 class="footer__title">
-                            About
-                        </h3>
-                        <p class="text-base leading-10 mb-16">
-                            We are an award winning HVAC company with over 10+ years experience in the business. We provide a wide range of services for both residential and commercial clients.
-                        </p>
-                        <div class="footer__social flex gap-6">
-                            <a href="#" class="footer__link">
-                                <img src="./img/svgicons/faccebook-small.svg" alt="faccebook">
-                            </a>
-                            <a href="#" class="footer__link">
-                                <img src="./img/svgicons/gmail.svg" alt="gmail">
-                            </a>
-                            <a href="#" class="footer__link">
-                                <img src="./img/svgicons/yelp-small.svg" alt="yelp">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="footer__item">
-                        <div class="footer__title">
-                            Contacts
-                        </div>
-                        <nav class="footer__nav">
-                            <a href="#">
-                                <img src="./img/svgicons/address.svg" alt="address">
-                                <div>
-                                    <p>Address</p>
-                                    <b>73 Canal Street, New York, Los</b>
-                                </div>
-                            </a>
-                            <a href="tel:+1 555 23 12">
-                                <img src="./img/svgicons/phone.svg" alt="phone">
-                                <div>
-                                    <p>Phone number</p>
-                                    <b>+1 555 23 12</b>
-                                </div>
-                            </a>
-                            <a href="mailto:example@example.com">
-                                <img src="./img/svgicons/mail.svg" alt="mail">
-                                <div>
-                                    <p>E-mail</p>
-                                    <b>example@example.com</b>
-                                </div>
-                            </a>
-                        </nav>
-                    </div>
-                    <div class="footer__item">
-                        <div class="footer__title">
-                            Quic links
-                        </div>
-                        <nav class="footer__nav">
-                            <a href="#" class="font-bold">About us</a>
-                            <a href="#" class="font-bold">Services</a>
-                            <a href="#" class="font-bold">News</a>
-                            <a href="#" class="font-bold">Location</a>
-                            <a href="#" class="font-bold">Contacts</a>
-                        </nav>
-                    </div>
-                    <div class="footer__logo">
-                        <img src="./img/svgicons/logo-footer.svg" alt="logo">
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
-</body>
+            </footer>
+        </div>
+    </body>
 </html>
