@@ -849,10 +849,6 @@ select{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
-.px-2{
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -5123,6 +5119,19 @@ textarea::placeholder,
   background: #dc5435;
 }
 
+.write-review__stars {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.write-review__stars p {
+  font-size: 18px;
+  flex: 0 0 130px;
+}
+.write-review__stars div {
+  font-size: 24px;
+}
+
 .intro {
   padding: 0 0 70px;
 }
@@ -6812,18 +6821,6 @@ body {
     justify-content: space-between;
     margin-bottom: 35px;
   }
-  .write-review__stars {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-  }
-  .write-review__stars p {
-    font-size: 18px;
-    flex: 0 0 130px;
-  }
-  .write-review__stars div {
-    font-size: 24px;
-  }
   .header__logo a {
     position: relative;
     z-index: 10;
@@ -7238,6 +7235,7 @@ body {
     padding-top: 60px;
     flex: none;
     max-width: 400px;
+    width: 100%;
   }
   .intro__img {
     min-width: auto;
@@ -7783,7 +7781,7 @@ body {
     right: 0%;
     transform: translate(0%, -50%);
     height: 130px;
-    width: 116px;
+    width: 80px;
   }
   .news .block-header {
     margin: 0px 0px 20px;
@@ -7939,6 +7937,13 @@ body {
     left: 0px;
     right: 0px;
     max-width: none;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  .header__links a.has-submenu::before {
+    width: auto;
+    height: auto;
+    transform: translate(-7px, 0px);
   }
   .video-reviews__nav {
     justify-content: space-between;
